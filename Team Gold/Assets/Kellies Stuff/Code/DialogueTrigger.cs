@@ -43,6 +43,7 @@ public class DialogueTrigger : MonoBehaviour
         _StoryScript.BindExternalFunction("Name", (string charName) => ChangeName(charName));
         _StoryScript.BindExternalFunction("Icon", (string charName) => CharacterIcon(charName));
         _StoryScript.BindExternalFunction("Back", (string charName) => BackIcon(charName));
+        // _StoryScript.EvaluateFunction("Health", Healthbar.Fufillment += 1);
         DisplayNextLine();
 
     }
@@ -87,7 +88,6 @@ public class DialogueTrigger : MonoBehaviour
         //instantiate button
         var choiceButton = Instantiate(choiceButtonPrefab);
         choiceButton.transform.SetParent(choiceHolder.transform, false);
-
         var buttonText = choiceButton.GetComponentInChildren<TMP_Text>();
         buttonText.text = text;
         return choiceButton;
@@ -96,6 +96,7 @@ public class DialogueTrigger : MonoBehaviour
     void onClickChoiceButton(Choice choice)
     {
         _StoryScript.ChooseChoiceIndex(choice.index);
+        // Healthbar.Fufillment += 1;
         RefreshChoiceView();
         DisplayNextLine();
     }
@@ -111,6 +112,10 @@ public class DialogueTrigger : MonoBehaviour
         }
     }
 
+    // void health()
+    // {
+    //     _StoryScript.EvaluateFunction("health",Healthbar.Fufillment += 1);
+    // }
     public void ChangeName(string name)
     {
         string SpeakerName = name;

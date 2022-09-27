@@ -1745,7 +1745,7 @@ namespace Ink.Runtime
             // Finish evaluation, and see whether anything was produced
             var result = state.CompleteFunctionEvaluationFromGame ();
             if(onCompleteEvaluateFunction != null) onCompleteEvaluateFunction(functionName, arguments, textOutput, result);
-            return result;
+             return result;
         }
 
         // Evaluate a "hot compiled" piece of ink content, as used by the REPL-like
