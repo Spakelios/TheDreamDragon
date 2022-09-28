@@ -17,30 +17,39 @@ public class HealthBarTest : MonoBehaviour
             AuntBar.value = 0.1f;
             AnxietyBar.value = 0f;
         }
+        else
+        {
+            AuntBar.value = 0f;
+        }
 
         
         if(Input.GetKeyDown("s"))
         {
             Healthbar.Anxiety += 1;
             AnxietyBar.value += 0.1f;
-            
         }
     }
 
     // Update is called once per frame
-    void Update()
+    void FixedUpdate()
     {
-        if(Healthbar.Fufillment >= 1)
+        if(Healthbar.Fufillment == 1)
         {
-            AuntBar.value = 1f;
+            AuntBar.value = 0.1f;
             AnxietyBar.value = 0f;
         }
-        
-        if(Input.GetKeyDown("s"))
+        else
         {
-            Healthbar.Anxiety += 1;
-            AnxietyBar.value += 0.1f;
-            
+            AuntBar.value = 0f;
+        }
+        
+        if(Healthbar.Anxiety == 1)
+        {
+            AnxietyBar.value = 0.1f;
+        }
+        else
+        {
+            AnxietyBar.value = 0f;
         }
         
     }

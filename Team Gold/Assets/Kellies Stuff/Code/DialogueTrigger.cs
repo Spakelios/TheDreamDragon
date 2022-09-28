@@ -9,6 +9,7 @@ using System;
 
 public class DialogueTrigger : MonoBehaviour
 {
+    private int num;
     [SerializeField] private TextAsset _InkJsonFile;
     private Story _StoryScript;
 
@@ -90,13 +91,13 @@ public class DialogueTrigger : MonoBehaviour
         choiceButton.transform.SetParent(choiceHolder.transform, false);
         var buttonText = choiceButton.GetComponentInChildren<TMP_Text>();
         buttonText.text = text;
+        choiceButton.name = "woah" + num++;
         return choiceButton;
     }
 
     void onClickChoiceButton(Choice choice)
     {
         _StoryScript.ChooseChoiceIndex(choice.index);
-        // Healthbar.Fufillment += 1;
         RefreshChoiceView();
         DisplayNextLine();
     }
@@ -112,10 +113,6 @@ public class DialogueTrigger : MonoBehaviour
         }
     }
 
-    // void health()
-    // {
-    //     _StoryScript.EvaluateFunction("health",Healthbar.Fufillment += 1);
-    // }
     public void ChangeName(string name)
     {
         string SpeakerName = name;
@@ -134,4 +131,5 @@ public class DialogueTrigger : MonoBehaviour
         var backIcon = Resources.Load<Sprite>("characterIcons/" + name);
         backgroundIcon.sprite = backIcon;
     }
+    
 }
