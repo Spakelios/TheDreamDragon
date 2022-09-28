@@ -18,13 +18,13 @@ public class HealthBarTest : MonoBehaviour
             AnxietyBar.value = 0f;
         }
 
-        //
-        // if(Input.GetKeyDown("s"))
-        // {
-        //     Healthbar.Anxiety += 1;
-        //     AnxietyBar.value += 0.1f;
-        //     
-        // }
+        
+        if(Input.GetKeyDown("s"))
+        {
+            Healthbar.Anxiety += 1;
+            AnxietyBar.value += 0.1f;
+            
+        }
     }
 
     // Update is called once per frame
@@ -36,12 +36,12 @@ public class HealthBarTest : MonoBehaviour
             AnxietyBar.value = 0f;
         }
         
-        // if(Input.GetKeyDown("s"))
-        // {
-        //     Healthbar.Anxiety += 1;
-        //     AnxietyBar.value += 0.1f;
-        //     
-        // }
+        if(Input.GetKeyDown("s"))
+        {
+            Healthbar.Anxiety += 1;
+            AnxietyBar.value += 0.1f;
+            
+        }
         
     }
 }
