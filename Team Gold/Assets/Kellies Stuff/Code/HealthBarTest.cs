@@ -23,7 +23,13 @@ public class HealthBarTest : MonoBehaviour
         }
         else if (Healthbar.Fufillment == 3)
         {
-            AuntBar.value = 1f;
+            AuntBar.value = 2f;
+            Healthbar.Fufillment = 0;
+        }
+        else if (Healthbar.Fufillment == 4)
+        {
+            AuntBar.value = 2f;
+            
         }
 
         if(Input.GetKeyDown("s"))

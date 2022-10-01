@@ -22,6 +22,11 @@ public class healthtest2 : MonoBehaviour
         {
             Healthbar.Anxiety += 1;
         }
+
+        if (name == "woah3")
+        {
+            Healthbar.Fufillment += 1;
+        }
         
     }
 }
