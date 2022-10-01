@@ -3,7 +3,7 @@ EXTERNAL Icon(charName)
 
 
 {Name("Wine Aunt")}
-{Icon("WineAunt")}
+{Icon("BMary")}
 
 Hi there, enjoying yourself yet?
 
@@ -17,7 +17,7 @@ Hi there, enjoying yourself yet?
 == one ==
 
 {Name("Wine Aunt")}
-{Icon("WineAunt")}
+{Icon("BMary")}
 
 oh, don't be a spoil sport! 
 You're here now so  try make the most of it!
@@ -27,7 +27,7 @@ You're here now so  try make the most of it!
 == two ==
 
 {Name("Wine Aunt")}
-{Icon("WineAunt")}
+{Icon("BMary")}
 
 Thats what I like to hear!
 A good attitude will help you have a better time with it!
