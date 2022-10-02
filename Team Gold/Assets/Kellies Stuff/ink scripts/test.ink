@@ -1,13 +1,16 @@
 EXTERNAL Name(charName)
 EXTERNAL Icon(charName)
+EXTERNAL MC(charName)
 
 
 {Name("BM")}
 {Icon("BMary")}
+{MC("You")}
 
 Hi there, enjoying yourself yet?
 
 {Name("You")}
+{MC("YouButShy")}
 ....
 
 * [ I'm looking forward to a good night] -> two 
@@ -21,7 +24,13 @@ Hi there, enjoying yourself yet?
 {Name("BM")}
 {Icon("BMary")}
 
+
+
 You think? Too dull for you or something? 
+
+{Name("You")}
+{MC("YouButShy")}
+....
 
 * [ Well it was will you joined me..] -> Four
 
@@ -33,12 +42,14 @@ You think? Too dull for you or something?
 
 {Name("BM")}
 {Icon("BMary")}
+{MC("You")}
 
 Really? Thats a good start,
 You wanna see somewhere cooler?
 Hey, relax i was only kidding!
 
-
+{MC("YouButShy")}
+.. !
 * [ I mean i wouldn't mind going somewhere with you-! ] -> continue
 
 

@@ -18,6 +18,7 @@ public class DialogueTrigger : MonoBehaviour
 
 
     public Image characterIcon;
+    public Image Icon;
     [SerializeField] private GridLayoutGroup choiceHolder;
     [SerializeField] private Button choiceButtonPrefab;
     public GameObject butt;
@@ -44,7 +45,7 @@ public class DialogueTrigger : MonoBehaviour
         _StoryScript.BindExternalFunction("Name", (string charName) => ChangeName(charName));
         _StoryScript.BindExternalFunction("Icon", (string charName) => CharacterIcon(charName));
         _StoryScript.BindExternalFunction("Back", (string charName) => BackIcon(charName));
-        // _StoryScript.EvaluateFunction("Health", Healthbar.Fufillment += 1);
+        _StoryScript.BindExternalFunction("MC", (string charName) => charactersIcon(charName));
         DisplayNextLine();
 
     }
@@ -131,5 +132,10 @@ public class DialogueTrigger : MonoBehaviour
         var backIcon = Resources.Load<Sprite>("characterIcons/" + name);
         backgroundIcon.sprite = backIcon;
     }
-    
+
+    public void charactersIcon(string name)
+    {
+        var WaterIcon = Resources.Load<Sprite>("characterIcons/" + name);
+        Icon.sprite = WaterIcon;
+    }
 }
