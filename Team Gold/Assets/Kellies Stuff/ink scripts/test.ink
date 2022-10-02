@@ -32,7 +32,7 @@ You think? Too dull for you or something?
 {MC("YouButShy")}
 ....
 
-* [ Well it was will you joined me..] -> Four
+* [ Well it would be if you joined me..] -> Four
 
 * [Too dull?!] -> five
 
@@ -50,17 +50,21 @@ Hey, relax i was only kidding!
 
 {MC("YouButShy")}
 .. !
-* [ I mean i wouldn't mind going somewhere with you-! ] -> continue
+* [ I Certainly wouldn't mind ] -> continue
+
+* [ only place i wanna go is home sir-! ] -> five
+
+* [ Well its certainly couldn't beat what ive got already ] -> three
 
 
 == continue ==
 {Name("BM")}
 {Icon("BMary")}
 
-Great then lets get out of here !
+Great! I'll stick with you then.
+Sounds more fun then sitting pretty.
 
 -> END
-
 
 
 == three ==
@@ -73,7 +77,9 @@ You seemed more interesting then that.
 == Four ==
 {Name("BM")}
 {Icon("BMary")}
-:flushed:
+Woah, woah woah. Thats ment to be my line!
+but I like your style.
+
 
 -> END
 
@@ -82,6 +88,8 @@ You seemed more interesting then that.
 {Icon("BMary")}
 
 oh? a little overwhelmed then? my mistake
+Here i thought i was in for some interesting coversation.
+See ya.
 
 
 -> END

@@ -29,7 +29,12 @@ public class HealthBarTest : MonoBehaviour
         else if (Healthbar.Fufillment == 4)
         {
             AuntBar.value = 2f;
-            
+
+        }
+
+        if (AuntBar.value >= 2)
+        {
+            Healthbar.Fufillment = 0;
         }
 
         if(Input.GetKeyDown("s"))
@@ -52,7 +57,7 @@ public class HealthBarTest : MonoBehaviour
         }
         else if (Healthbar.Fufillment == 3)
         {
-            AuntBar.value = 1f;
+            AuntBar.value = 2f;
         }
         
         if(Healthbar.Anxiety == 1)

@@ -5,7 +5,13 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/SampleScene.unity
     guid: 2cda990e2423bbf4892e6590ba056729
+  - enabled: 1
+    path: Assets/Kellies Stuff/Scenes/Intro.unity
+    guid: 5b4c0ac485e46a04d8b3db3f263e007e
+  - enabled: 1
+    path: Assets/Gabs Stuff/gab scene 2 boogie woogy woogy.unity
+    guid: 87e33f2ac9c96a34f9999b8b54f3844b
   m_configObjects: {}
