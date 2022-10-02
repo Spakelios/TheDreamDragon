@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
-using UnityEngine.Tilemaps;
+
 
 
 public class changescene : MonoBehaviour
@@ -22,7 +22,7 @@ public class changescene : MonoBehaviour
     {
         Debug.Log("diocane");
         if (collision.tag == "Player")
-            SceneManager.LoadScene("Prototype VN", LoadSceneMode.Single);
+            SceneManager.LoadScene("PrototypeVN", LoadSceneMode.Single);
     }
 
 
