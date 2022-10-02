@@ -7,6 +7,7 @@ using UnityEngine.SceneManagement;
 
 public class changescene : MonoBehaviour
 {
+    public GameObject talk;
     // Start is called before the first frame update
     void Start()
     {
@@ -22,7 +23,8 @@ public class changescene : MonoBehaviour
     {
         Debug.Log("diocane");
         if (collision.tag == "Player")
-            SceneManager.LoadScene("PrototypeVN", LoadSceneMode.Single);
+            // SceneManager.LoadScene("PrototypeVN", LoadSceneMode.Single);
+            talk.SetActive(true);
     }
 
 
