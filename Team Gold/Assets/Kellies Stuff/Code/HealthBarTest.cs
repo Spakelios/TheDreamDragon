@@ -15,16 +15,16 @@ public class HealthBarTest : MonoBehaviour
     {
         if(Healthbar.Fufillment == 1)
         {
-            AuntBar.value = 0.3f;
+            AuntBar.value = 0.5f;
         }
         else if (Healthbar.Fufillment == 2)
         {
-            AuntBar.value = 0.5f;
+            AuntBar.value = 0.7f;
         }
         else if (Healthbar.Fufillment == 3)
         {
             AuntBar.value = 2f;
-            Healthbar.Fufillment = 0;
+            Healthbar.Fufillment = 2;
         }
         else if (Healthbar.Fufillment == 4)
         {
@@ -43,12 +43,12 @@ public class HealthBarTest : MonoBehaviour
     {
         if(Healthbar.Fufillment == 1)
         {
-            AuntBar.value = 0.3f;
+            AuntBar.value = 0.5f;
             
         }
         else if (Healthbar.Fufillment == 2)
         {
-            AuntBar.value = 0.5f;
+            AuntBar.value = 0.7f;
         }
         else if (Healthbar.Fufillment == 3)
         {
@@ -57,7 +57,7 @@ public class HealthBarTest : MonoBehaviour
         
         if(Healthbar.Anxiety == 1)
         {
-            AnxietyBar.value = 0.3f;
+            AnxietyBar.value = 1f;
         }
         else if (Healthbar.Anxiety == 2)
         {
@@ -65,7 +65,7 @@ public class HealthBarTest : MonoBehaviour
         }
         else if (Healthbar.Anxiety == 3)
         {
-            AnxietyBar.value = 1f;
+            AnxietyBar.value = 0f;
         }
     }
 }
