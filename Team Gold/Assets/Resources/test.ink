@@ -2,35 +2,76 @@ EXTERNAL Name(charName)
 EXTERNAL Icon(charName)
 
 
-{Name("Wine Aunt")}
-{Icon("WineAunt")}
+{Name("BM")}
+{Icon("BMary")}
 
 Hi there, enjoying yourself yet?
 
 {Name("You")}
 ....
 
-* [ could be better...] -> one 
+* [ I'm looking forward to a good night] -> two 
 
-* [ I'm looking forward to a good night ] -> two 
+* [ well, its ok.. ] -> one
+
+* [ I wish i was home to be honest.. ] -> three
 
 == one ==
 
-{Name("Wine Aunt")}
-{Icon("WineAunt")}
+{Name("BM")}
+{Icon("BMary")}
 
-oh, don't be a spoil sport! 
-You're here now so  try make the most of it!
+You think? Too dull for you or something? 
 
--> END
+* [ Well it was will you joined me..] -> Four
+
+* [Too dull?!] -> five
+
+* [ Ive done better ] -> three
 
 == two ==
 
-{Name("Wine Aunt")}
-{Icon("WineAunt")}
+{Name("BM")}
+{Icon("BMary")}
 
-Thats what I like to hear!
-A good attitude will help you have a better time with it!
-Have fun!
+Really? Thats a good start,
+You wanna see somewhere cooler?
+Hey, relax i was only kidding!
 
-    -> END
+
+* [ I mean i wouldn't mind going somewhere with you-! ] -> continue
+
+
+== continue ==
+{Name("BM")}
+{Icon("BMary")}
+
+Great then lets get out of here!
+
+-> END
+
+
+
+== three ==
+
+Damn... you're a really party pooper huh? Shame.
+You seemed more interesting then that.
+
+-> END
+
+== Four ==
+{Name("BM")}
+{Icon("BMary")}
+:flushed:
+
+-> END
+
+== five ==
+{Name("BM")}
+{Icon("BMary")}
+
+oh? a little overwhelmed then? my mistake
+
+
+-> END
+

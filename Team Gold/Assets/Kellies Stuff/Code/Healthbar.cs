@@ -4,6 +4,6 @@ using UnityEngine;
 
 public class Healthbar : ScriptableObject
 {
-    public static int Anxiety = 0;
-    public static int Fufillment = 0;
+    public static float Anxiety = 0;
+    public static float Fufillment = 0;
 }
